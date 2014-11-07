@@ -29,5 +29,10 @@ class ArrayDataAnalysis
    end
    dayofhigh
   end
+  def average_temperature
+    @tempdata.map {|daydata| (daydata[1]+daydata[2])/ 2 }
+
+
+  end
 
 end
